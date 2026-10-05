@@ -1,181 +1,209 @@
 <div align="center">
 
-# Weather App · آب‌وهوا
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1200&color=3A86D6&center=true&vCenter=true&width=640&lines=Weather+App;Live+%26+animated+forecasts;16+languages+%C2%B7+20+backgrounds;Zero+dependencies+%C2%B7+No+API+key" alt="Weather App" />
 
-**A live, animated weather dashboard in a single HTML file — 16 languages, 20 backgrounds, a weather-driven living backdrop and a full settings system.**
+### A living, breathing weather dashboard — in a single HTML file.
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
-![Open-Meteo](https://img.shields.io/badge/Data-Open--Meteo-2563eb)
-![No API key](https://img.shields.io/badge/API%20key-not%20required-3fb67a)
+Search any city and watch the page react to the real sky: rain, snow, stars, clouds, fog and lightning.
 
-[English](#english) · [فارسی](#فارسی)
+<p>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/Open--Meteo-2563EB?style=for-the-badge&logo=cloudflare&logoColor=white" alt="Open-Meteo" />
+</p>
+<p>
+  <img src="https://img.shields.io/badge/API%20key-not%20required-3fb67a?style=flat-square" alt="No API key" />
+  <img src="https://img.shields.io/badge/dependencies-0-3a86d6?style=flat-square" alt="Zero dependencies" />
+  <img src="https://img.shields.io/badge/languages-16-d946ef?style=flat-square" alt="16 languages" />
+  <img src="https://img.shields.io/badge/license-MIT-orange?style=flat-square" alt="MIT" />
+</p>
+
+[✨ Features](#-features) · [⚙️ Settings](#%EF%B8%8F-settings) · [🚀 Quick start](#-quick-start) · [⌨️ Shortcuts](#%EF%B8%8F-keyboard-shortcuts) · [🗺️ Roadmap](#%EF%B8%8F-roadmap)
 
 </div>
 
 ---
 
-## English
+## 📸 Preview
 
-### Overview
-Weather App is a minimal, professional weather dashboard built with vanilla HTML, CSS and JavaScript — no framework, no build step, no API key. Search any city, watch the page react to the real weather (rain, snow, stars, clouds, fog, lightning), and tune almost everything from a built-in settings panel.
-
-### Features
-
-**Weather**
-- Current conditions, feels-like, humidity, pressure, UV, visibility, cloud cover and dew point
-- Hourly forecast (12 / 24 / 48 h) and daily forecast (7 / 10 / 14 days)
-- Hourly trend chart with 4 modes: temperature, feels-like, rain chance, wind
-- 24-hour precipitation bars with total rainfall
-- Wind compass with direction, gusts and Beaufort scale
-- Sun arc (sunrise, sunset, daylight length) and moon phase
-- Air quality (European AQI, PM2.5, PM10, NO₂, O₃)
-- Automatic alerts: heat, freezing, strong wind, high UV, thunderstorm, heavy rain, poor air quality
-- Daily advice: what to wear and activity scores (running, cycling, car wash, line drying)
-
-**Cities**
-- Search with live suggestions, flags, population and keyboard navigation
-- Favorite cities with live temperatures, recent searches, GPS location
-- Shareable link for any city (`#lat,lon,name`)
-
-**Look & feel**
-- Floating pill header that shrinks on scroll, quick °C / °F switch with tooltips
-- Load animations, scroll-reveal, count-up temperature, chart drawing, skeleton loading
-- Weather-driven background: canvas particles (rain, snow, stars, shooting stars, lightning, clouds, fog) plus floating weather icons
-- Ripple effect, toasts and tooltips on interactions
-- Hand-drawn SVG icon set — no emoji, no icon library
-
-**Settings (8 tabs)**
-- **Look:** 10 style presets (default: *Calm*), 5 themes, accent color with HSL sliders, 16 languages with flags, 9 fonts per language, corner radius, text size, number weight, digit style
-- **Background:** 20 still and animated patterns with live previews and an intensity slider
-- **Interface:** card style (glass / outline / solid), high contrast, compact mode, flipped columns, temperature-based number color, content width
-- **Effects:** live weather background, floating icons, particles, scroll animations, 3D cards, cursor glow, progress bar, animation speed and intensity
-- **Mouse:** custom cursor (ring / dot / halo) and scrollbar styles
-- **Units:** temperature, wind, pressure, distance, rain, 12/24 h, Jalali or Gregorian calendar, auto refresh
-- **Content:** show/hide sections, drag-and-drop ordering, hourly range, forecast days, alert thresholds, startup behavior
-- **Data:** export / import settings (JSON), reset, print, built-in **guide** (the animated **!** button next to the title)
-
-### Getting started
-```bash
-git clone https://github.com/MahdiBarkhordar/weather-app.git
-cd weather-app
-# open index.html in your browser, or serve it locally:
-npx serve .
-```
-Rename `weather-app.html` to `index.html` if you want it served by default. An internet connection is required for weather data, flags and fonts.
-
-### Keyboard shortcuts
-| Key | Action |
-|-----|--------|
-| `/` | Focus search |
-| `,` | Open / close settings |
-| `U` | Toggle °C / °F |
-| `Esc` | Close panel or dropdown |
-
-### Data sources
-- Weather, geocoding and air quality: [Open-Meteo](https://open-meteo.com) (free, no key)
-- Country flags: [flagcdn.com](https://flagcdn.com)
-- Fonts: [Google Fonts](https://fonts.google.com), loaded on demand per language
-
-### Tech notes
-- Single self-contained file; settings are stored in `localStorage`
-- Fully responsive, RTL / LTR aware, respects `prefers-reduced-motion`
-- Translations: Persian and English are complete; other languages cover the core interface and fall back to English
-
-### Roadmap
-- [ ] Precipitation radar map
-- [ ] Complete translations for all 16 languages
-- [ ] Severe-weather browser notifications
-- [ ] PWA / offline support
-
-### Author
-Designed and built by **[Mehdi Barkhordar](https://github.com/MahdiBarkhordar)**.
-
-### License
-MIT — feel free to use, modify and share.
+> Add a screenshot or GIF here, e.g. `![Weather App](./preview.png)`
 
 ---
 
-<div dir="rtl">
+## ✨ Features
 
-## فارسی
+### 🌦️ Weather intelligence
 
-### معرفی
-**آب‌وهوا** یک داشبورد هواشناسی زنده و متحرک است که فقط با HTML، CSS و جاوااسکریپت خالص ساخته شده؛ بدون فریم‌ورک، بدون مرحله‌ی build و بدون نیاز به کلید API. هر شهری را جستجو کن، ببین صفحه با آب‌وهوای واقعی (باران، برف، ستاره، ابر، مه، رعدوبرق) واکنش نشان می‌دهد و تقریباً همه‌چیز را از پنل تنظیمات شخصی‌سازی کن.
+| | Feature | Details |
+|---|---|---|
+| 🌡️ | **Current conditions** | Temperature, feels-like, humidity, pressure, UV, visibility, cloud cover, dew point |
+| ⏱️ | **Hourly forecast** | 12 / 24 / 48 hour range, draggable strip with scroll hints |
+| 📅 | **Daily forecast** | 7 / 10 / 14 days with min–max range bars |
+| 📈 | **Trend chart** | 4 modes: temperature, feels-like, rain chance, wind |
+| 🌧️ | **Precipitation** | 24-hour probability bars with total rainfall |
+| 🧭 | **Wind compass** | Direction, gusts and Beaufort scale |
+| 🌅 | **Sun & moon** | Sun arc, sunrise, sunset, daylight length, live moon phase |
+| 🍃 | **Air quality** | European AQI, PM2.5, PM10, NO₂, O₃ |
+| 🚨 | **Smart alerts** | Heat, freezing, strong wind, high UV, thunderstorm, heavy rain, poor air |
+| 👕 | **Daily advice** | What to wear + scores for running, cycling, car wash, line drying |
 
-### امکانات
+### 🌍 Cities & search
 
-**هواشناسی**
-- وضعیت فعلی، دمای احساس‌شده، رطوبت، فشار، UV، دید افق، پوشش ابر و نقطه شبنم
-- پیش‌بینی ساعتی (۱۲ / ۲۴ / ۴۸ ساعت) و روزانه (۷ / ۱۰ / ۱۴ روز)
-- نمودار روند ساعتی با ۴ حالت: دما، احساس‌شده، احتمال بارش و باد
-- نمودار بارش ۲۴ ساعت آینده با مجموع بارش
-- قطب‌نمای باد با جهت، تندباد و مقیاس بوفورت
-- کمان خورشید (طلوع، غروب، طول روز) و فاز ماه
-- کیفیت هوا (AQI اروپایی، PM2.5، PM10، NO₂، O₃)
-- هشدارهای خودکار: گرما، یخبندان، باد شدید، UV بالا، طوفان، بارش سنگین و آلودگی هوا
-- پیشنهاد روزانه: پوشش مناسب و امتیاز دویدن، دوچرخه‌سواری، کارواش و خشک‌کردن لباس
+- 🔎 Live suggestions with **flags, region and population**, keyboard navigation (↑ ↓ Enter)
+- ⭐ **Favorite cities** with live temperatures side by side
+- 🕘 Recent searches and one-tap **GPS location**
+- 🔗 Shareable link for any city (`#lat,lon,name`)
 
-**شهرها**
-- جستجو با پیشنهاد زنده، پرچم، جمعیت و پیمایش با کیبورد
-- شهرهای مورد علاقه با دمای زنده، جستجوهای اخیر و موقعیت GPS
-- پیوند اشتراکی برای هر شهر
+### 🎨 Design & motion
 
-**ظاهر و حس استفاده**
-- هدر معلق و جمع‌وجور که با اسکرول کوچک می‌شود، با سوییچ سریع °C / °F و تولتیپ
-- انیمیشن ورود، ظاهر شدن با اسکرول، شمارش دما، رسم نمودار و اسکلت بارگذاری
-- پس‌زمینه‌ی زنده بر اساس هوا: ذرات (باران، برف، ستاره، شهاب، رعدوبرق، ابر، مه) و آیکون‌های معلق
-- موج کلیک، توست و تولتیپ برای واکنش به تعامل‌ها
-- مجموعه آیکون SVG سفارشی، بدون ایموجی و بدون کتابخانه‌ی آیکون
+- 🫧 **Floating pill header** that shrinks on scroll, with a sliding **°C / °F** switch
+- 🌌 **Weather-driven background** — canvas particles (rain, snow, stars, shooting stars, lightning, clouds, fog) plus floating weather icons
+- 🎬 Load animations, scroll-reveal, count-up temperature, self-drawing chart, skeleton loading
+- 💧 Ripple clicks, toasts and tooltips everywhere
+- 🖼️ Custom **SVG icon set** — no emoji, no icon library inside the app
+- 🌗 5 themes, 10 style presets, glass / outline / solid cards, fully responsive and RTL-aware
 
-**تنظیمات (۸ تب)**
-- **ظاهر:** ۱۰ سبک آماده (پیش‌فرض: آرام)، ۵ تم، رنگ تأکیدی با اسلایدر HSL، ۱۶ زبان با پرچم، ۹ فونت برای هر زبان، گوشه‌ها، اندازه‌ی متن، ضخامت عدد و نوع ارقام
-- **پس‌زمینه:** ۲۰ طرح ثابت و متحرک با پیش‌نمایش زنده و اسلایدر شدت
-- **رابط:** سبک کارت (شیشه‌ای، خطی، توپر)، کنتراست بالا، حالت فشرده، جابه‌جایی ستون‌ها، رنگ عدد بر اساس دما و عرض محتوا
-- **جلوه‌ها:** پس‌زمینه‌ی زنده، آیکون‌های معلق، ذرات، انیمیشن اسکرول، کارت سه‌بعدی، درخشش ماوس، نوار پیشرفت و سرعت و شدت انیمیشن
-- **ماوس:** نشانگر سفارشی (حلقه، نقطه، هاله) و سبک اسکرول‌بار
-- **واحدها:** دما، باد، فشار، فاصله، بارش، ساعت ۱۲/۲۴، تقویم شمسی یا میلادی و به‌روزرسانی خودکار
-- **محتوا:** نمایش یا پنهان‌کردن بخش‌ها، ترتیب با درگ‌اندرداپ، بازه‌ی ساعتی، تعداد روزها، آستانه‌ی هشدارها و رفتار شروع برنامه
-- **داده‌ها:** خروجی و ورودی تنظیمات (JSON)، بازنشانی، چاپ و **راهنمای** داخلی (دکمه‌ی متحرک **!** کنار عنوان)
+---
 
-### شروع سریع
+## ⚙️ Settings
+
+A full-option panel with **8 tabs**, live previews and a built-in animated **guide** (the pulsing `!` button next to the title).
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**🎨 Look**
+- 10 style presets (default: *Calm*)
+- Light · Dark · Auto · Sepia · Midnight
+- Accent color + HSL sliders
+- **16 languages** with flags
+- **9 fonts per language**
+- Corners, text size, number weight, digit style
+
+**🖼️ Background**
+- 20 still & animated patterns: dots, grid, squares, checker, zigzag, waves, rings, bubbles, flow, aurora, stars, grain…
+- Live previews + intensity slider
+
+**🧩 Interface**
+- Glass / outline / solid cards
+- High contrast, compact mode, flipped columns
+- Temperature-based number color
+- Content width
+
+**✨ Effects**
+- Live weather background, floating icons, particles
+- Scroll animations, 3D cards, cursor glow
+- Progress bar, animation speed & intensity
+
+</td>
+<td width="50%" valign="top">
+
+**🖱️ Mouse**
+- Custom cursor: ring · dot · halo
+- Cursor & scrollbar colors and styles
+
+**📏 Units**
+- °C / °F / K · km/h / m/s / mph / kn
+- hPa / mmHg / inHg / kPa · km / mi · mm / in
+- 12 / 24 h clock
+- Jalali or Gregorian calendar
+- Auto refresh (5 / 15 / 30 min)
+
+**🗂️ Content**
+- Show / hide any section
+- **Drag & drop** section ordering
+- Hourly range & forecast days
+- Heat and wind alert thresholds
+- Startup behavior (last city / GPS)
+
+**💾 Data**
+- Export / import settings (JSON)
+- Reset to defaults, print
+- Built-in guide & shortcuts
+
+</td>
+</tr>
+</table>
+
+<details>
+<summary><b>🌐 Supported languages</b></summary>
+
+<br>
+
+Persian · English · Arabic · Turkish · German · French · Spanish · Italian · Portuguese · Russian · Chinese · Japanese · Korean · Hindi · Urdu · Dutch
+
+Persian and English are fully translated; other languages cover the core interface and fall back to English for the rest.
+
+</details>
+
+---
+
+## 🚀 Quick start
+
 ```bash
+# 1. Clone
 git clone https://github.com/MahdiBarkhordar/weather-app.git
 cd weather-app
-# فایل index.html را در مرورگر باز کن یا با سرور محلی اجرا کن:
+
+# 2. Open index.html in your browser — or serve it locally
 npx serve .
 ```
-اگر می‌خواهی صفحه به‌صورت پیش‌فرض باز شود، نام `weather-app.html` را به `index.html` تغییر بده. برای دریافت داده‌ی هوا، پرچم‌ها و فونت‌ها اینترنت لازم است.
 
-### میان‌برها
-| کلید | عملکرد |
-|------|--------|
-| `/` | رفتن به جستجو |
-| `,` | باز و بسته کردن تنظیمات |
-| `U` | تغییر °C / °F |
-| `Esc` | بستن پنل یا منوی کشویی |
+> 💡 Rename `weather-app.html` to `index.html` so it opens by default (and works out of the box on **GitHub Pages**).
+> 🌐 An internet connection is needed for weather data, flags and fonts.
 
-### منابع داده
-- هواشناسی، جستجوی شهر و کیفیت هوا: [Open-Meteo](https://open-meteo.com) (رایگان و بدون کلید)
-- پرچم کشورها: [flagcdn.com](https://flagcdn.com)
-- فونت‌ها: [Google Fonts](https://fonts.google.com) که برای هر زبان به‌صورت درخواستی بارگذاری می‌شوند
+---
 
-### نکات فنی
-- یک فایل مستقل؛ تنظیمات در `localStorage` ذخیره می‌شوند
-- کاملاً واکنش‌گرا، سازگار با RTL و LTR و پشتیبان `prefers-reduced-motion`
-- ترجمه‌ی فارسی و انگلیسی کامل است؛ زبان‌های دیگر بخش‌های اصلی رابط را پوشش می‌دهند و بقیه به انگلیسی برمی‌گردند
+## ⌨️ Keyboard shortcuts
 
-### برنامه‌ی آینده
-- [ ] نقشه‌ی رادار بارش
-- [ ] ترجمه‌ی کامل هر ۱۶ زبان
-- [ ] اعلان مرورگر برای هوای نامساعد
-- [ ] پشتیبانی PWA و حالت آفلاین
+| Key | Action |
+|:---:|--------|
+| <kbd>/</kbd> | Focus search |
+| <kbd>,</kbd> | Open / close settings |
+| <kbd>U</kbd> | Toggle °C / °F |
+| <kbd>↑</kbd> <kbd>↓</kbd> <kbd>Enter</kbd> | Navigate and pick search results |
+| <kbd>Esc</kbd> | Close panel or dropdown |
 
-### سازنده
-طراحی و ساخت: **[مهدی برخوردار](https://github.com/MahdiBarkhordar)**
+---
 
-### مجوز
-MIT — آزادانه استفاده، ویرایش و منتشر کن.
+## 🧱 Tech notes
+
+- 📄 **One self-contained file** — HTML, CSS and JavaScript, no build step
+- 💾 Settings persist in `localStorage`
+- 📱 Responsive, RTL / LTR aware, respects `prefers-reduced-motion`
+- 🚀 Fonts load on demand, only for the language you pick
+
+## 🔌 Data sources
+
+| Service | Used for |
+|---------|----------|
+| [Open-Meteo](https://open-meteo.com) | Forecast, geocoding, air quality (free, no key) |
+| [flagcdn](https://flagcdn.com) | Country flags |
+| [Google Fonts](https://fonts.google.com) | Per-language typography |
+
+---
+
+## 🗺️ Roadmap
+
+- [ ] 🛰️ Precipitation radar map
+- [ ] 🌐 Complete translations for all 16 languages
+- [ ] 🔔 Severe-weather browser notifications
+- [ ] 📲 PWA & offline support
+
+---
+
+## 👨‍💻 Author
+
+<div align="center">
+
+**Mehdi Barkhordar** — web designer & developer
+
+[![GitHub](https://img.shields.io/badge/GitHub-MahdiBarkhordar-181717?style=for-the-badge&logo=github)](https://github.com/MahdiBarkhordar)
+
+If you like this project, give it a ⭐ — it really helps!
+
+<sub>Released under the MIT License.</sub>
 
 </div>
